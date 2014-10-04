@@ -23,3 +23,12 @@ Ermias Negash
   - Now that I am in my third quarter I have taken a couple of the required courses and would have to say that the class I enjoyed the most is a tie between CS 162 and CS 261. This is because of all the coding projects while my least favorite class was CS 225 just because we did no programming.
 
   - In the last 6 months I have learned how to code, at a beginner level, in C/C++/Python and I'm excited to learn HTML/Javascript/CSS.  
+
+
+##Fall 2014 Schedule
+
+  - CS 494 Web Development
+
+  - CS 275 Introduction to Databases
+
+  - CS 271 Computer Architecture and Assembly Language
