@@ -9,3 +9,6 @@ Ermias Negash
 
 
 ##Programming Background
+  - Prior to joining Oregon State University, as a student, I had no programming experience.
+    I was a fish out of water my first quarter, but CS 161 as a whole was a fun and eye opening class. 
+  
