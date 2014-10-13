@@ -1,0 +1,94 @@
+table{
+  border: ridge black 1px;
+}
+
+th{
+  border:ridge black 1px;
+}
+
+td{
+  border:ridge black 1px
+}
+
+td.column1{
+  border:ridge black 1px;
+  font-style:italic;
+}
+
+td.column2{
+  color:red;
+  border:ridge black 1px;
+}
+
+td.column4{
+  color:blue;
+  border:ridge black 1px;
+}
+
+dl dt:hover + dd{
+  background-color: purple;
+}
+
+form{
+  width:500px;
+  padding:1em;
+  margin:1px
+}
+
+#red{
+  background-color: red;
+  width: 15%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 5%;
+  float: left;
+}
+
+#orange{
+  background-color: orange;
+  width: 50%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 10%;
+  float: left;
+}
+
+#yellow{
+  background-color: yellow;
+  width: 50px;
+  height: 200px;
+  margin-top: 75px;
+  margin-left: 100px;
+  clear: left;
+  float: left;
+}
+
+#green{
+  background-color: green;
+  width: 150px;
+  height: 200px;
+  margin-top: 75px;
+  margin-left: 20px;
+  float: left;
+}
+
+#blue{
+  background-color: blue;
+  width: 50px;
+  height: 200px;
+  margin-top: 75px;
+  margin-left: 30px;
+  margin-right: 100px;
+  float: left;
+  clear: left;
+}
+
+#indigo{
+  background-color: indigo;
+  width: 150px;
+  height: 200px;
+  margin-top: 75px;
+  margin-left: 10px;
+  margin-right: 100px;
+  float: right;
+}
