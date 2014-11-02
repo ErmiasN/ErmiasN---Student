@@ -21,9 +21,9 @@ echo'<!DOCTYPE html>
     <title>WELCOME</title>
   </head>
   <body>
-    <form action='content.php' method='POST'>
-      Username: <input type='text' name='username'><br>
-      <input type='submit' value='Login'>
+    <form action="content.php" method="POST">
+      Username: <input type="text" name="username"><br>
+      <input type="submit" value="Login">
      </form>
    </body>
 </html>';
