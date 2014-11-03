@@ -55,31 +55,32 @@ if($correct == 0){
 
   $Tall = ($currentArray['max-multiplicand'] - $currentArray['min-multiplicand']) + 2;
   $Wide = ($currentArray['max-multiplier'] - $currentArray['min-multiplier'])+2;
-  $minMult = $currentArray[min-multiplier];
-  $maxMult = $currentArray[max-multiplier];
-  $minAnd = $currentArray[min-multiplicand];
-  $maxAnd = $currentArray[max-multiplicand];
+  $minMult = $currentArray['min-multiplier'];
+  $maxMult = $currentArray['max-multiplier'];
+  $minAnd = $currentArray['min-multiplicand'];
+  $maxAnd = $currentArray['max-multiplicand'];
+  $minimumMult = $currentArray['min-multiplier']
 
   echo '<p><h3>Multtable Table<h3>
   <p>
   <table border = "1">
   <tr><th></th>';
 
-  for($i = 0; $i < $WIDE; $i++){
+  for($i = 0; $i < $Wide; $i++){
     for($j = 0; $j < $Tall; $j++){
       if($i == 0 && $j == 0){
         //prints the empty upper left corner cell
         echo "<thead><th></th>";
       }
-      else if($i == 0){
-        echo "<th>" . ($minAnd++) . "</th>";
+      else if($i == 0 && $j > 0){
+        echo "<th>" . ($minMult++) . "</th>";
       }
-      else if($j == 0){
-        echo "<tr>" . ($minMult++) . "</tr>";
+      else if($j == 0  && $i > 0){
+        echo "<tr>" . ($minAnd++) . "</tr>";
       }
       else if($i > 0 && $j > 0){
-        //prints out the products by column
-        echo "<td>" . (($currentArray['min-multiplier']) * $minAnd) . "</td>";
+        $product = (($minimumMult + $i - 1) * $minAnd);
+        echo "<tr><td>" . $product . "</td></tr>";
       }
       else{
         echo "<td></td>"
@@ -89,4 +90,5 @@ if($correct == 0){
     
   echo "</table>";
 }
+
 ?>
