@@ -1,0 +1,19 @@
+table{
+  border: ridge black 1px; 
+}
+
+th{
+  border:ridge black 1px;
+  width:100px;
+}
+
+td{
+  border:ridge black 1px;
+  width:100px;
+}
+
+form{
+  width:750px;
+  padding:1em;
+  margin:1px;
+}
