@@ -73,7 +73,6 @@ if($_POST){
 	<head>
 		<title>Itinerary</title>
 		<link href="travel.css" rel="stylesheet" type="text/css">
-<!-- NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE  -->
 		<link rel="stylesheet" href="http://openlayers.org/en/v3.0.0/css/ol.css" type="text/css">
     <style>
       .map {
@@ -82,7 +81,6 @@ if($_POST){
       }
     </style>
     <script src="http://openlayers.org/en/v3.0.0/build/ol.js" type="text/javascript"></script>
-<!-- NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE  -->
 	</head>
 	<p class="two">Hello <?php echo $name;?></p>
 	<p><b>Future Travels</b><br> Now where would you like to travel today? Cause this map is the closest your gonna get!</p>
@@ -121,7 +119,7 @@ if($_POST){
 	  print($errormsg);
 	}
 	?>
-<!-- NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE  -->	
+<!--CODE HERE IS TAKEN FROM openlayers.org This particular piece of code comes from the instruction on how to implement the map into you website-->	
     <div id="map" class="map"></div>
     <script type="text/javascript">
       var map = new ol.Map({
@@ -137,7 +135,7 @@ if($_POST){
         })
       });
     </script>
-<!-- NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE NEW CODE  -->
+<!--Code taken from openlayers.org stops here Minor changes where made to the map specifically the center (image longitude and latitude) and zoom-->
 	<!--Button will sign out user by sending them to loggedout.php web page -->
 	<form class="one" method="post" action="loggedout.php">
 		<p><input type="submit" value="Sign Out"></p>
