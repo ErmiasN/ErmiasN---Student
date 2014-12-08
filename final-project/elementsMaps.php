@@ -59,34 +59,10 @@ $data = json_decode(curl_exec ($curl));
 curl_close ($curl);
 $lat = $data->coord->lat;
 $lon = $data->coord->lon;
-
+//How-To Guide of Jeff Tabachnick was used to set up a map on the website using openlayers and openweathermap
 echo "
 <div id=\"map\" class=\"map\"></div>
 <script type=\"text/javascript\">
-var marker = new ol.Feature({ /**coords replaced by $lon,$lat**/
-  geometry: new ol.geom.Point(ol.proj.transform([$lon, $lat], 'EPSG:4326', 'EPSG:3857'))
-});
-
-var markerStyle = new ol.style.Style({
-  image: new ol.style.Icon(({
-    anchorXUnits: 'fraction',
-    anchorYUnits: 'pixels',
-    anchor: [0.5,512],
-    opacity: 0.7,
-    scale: 0.1,
-    src: 'images/midIcon.png'
-  }))
-}); 
-
-marker.setStyle(markerStyle);
-
-var markerSource = new ol.source.Vector({
-  features: [marker]
-});
-
-var markerLayer = new ol.layer.Vector({
-  source: markerSource
-});
 
 var satelliteLayer = new ol.layer.Tile({
   source: new ol.source.MapQuest({layer: 'sat'})
@@ -97,7 +73,7 @@ var streetLayer = new ol.layer.Tile({
 });
 
 var map = new ol.Map({
-  layers: [satelliteLayer, streetLayer, markerLayer],
+  layers: [satelliteLayer, streetLayer],
   target: document.getElementById('map'),
   view: new ol.View({
     center: ol.proj.transform([$lon, $lat], 'EPSG:4326', 'EPSG:3857'), /**coords replaced by $lon,$lat**/
